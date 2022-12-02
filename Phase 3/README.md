@@ -1,3 +1,4 @@
+## Phase 3
 Our code is structured into 3 packages:  
 **Agent**: it contains the main component for the Game logic; the map, the agents. 
 **Controller**: establishes the connections between the logic and the visuals of the user interface, also contains useful generic method and interface to be use at any time (vectors).
