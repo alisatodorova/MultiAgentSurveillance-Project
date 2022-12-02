@@ -1,6 +1,6 @@
 # MultiAgentSurveillance-Project
 
-A semester-long group project split into 3 phases. Please consult _2021-2022_2-2_ProjectManual_ for more information about the project and its phases.
+A semester-long group project split into 3 phases. Please consult _2021-2022_2-2_ProjectManual.pdf_ for more information about the project and its phases.
 
 Our code for each phase is in a separate folder and inside there's a README file that explains how to run the code.
 
