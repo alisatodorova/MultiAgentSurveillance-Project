@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="496.0" prefWidth="600.0" style="-fx-background-radius: 10; -fx-background-color: rgb(45, 45, 50), rgb(45, 45, 50); -fx-background-insets: 0, 0 1 1 0;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx.HelloController">
+   <children>
+
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="62.0" prefWidth="586.0">
+                     <children>
+                        <Text fill="WHITE" layoutX="60.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Q Learning Settings" textAlignment="CENTER" wrappingWidth="496.037109375">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                        </Text>
+                     </children>
+              </AnchorPane>
+                  <HBox prefHeight="40.0" prefWidth="650.0">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="20.0" top="10.0" />
+                           </HBox.margin>
+                           <image>
+                              <Image url="file:/../res/JavaFX/brain.png" />
+                           </image>
+                        </ImageView>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Learning Rate">
+                           <HBox.margin>
+                              <Insets left="25.0" top="25.0" />
+                           </HBox.margin>
+                        </Text>
+                        <TextField fx:id="learningRate" prefWidth="300.0" text="0.3">
+                           <HBox.margin>
+                              <Insets left="50.0" top="20.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="40.0" prefWidth="650.0">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="20.0" top="10.0" />
+                           </HBox.margin>
+                           <image>
+                              <Image url="file:/../res/JavaFX/dices.png" />
+                           </image>
+                        </ImageView>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Randomness">
+                           <HBox.margin>
+                              <Insets left="25.0" top="25.0" />
+                           </HBox.margin>
+                        </Text>
+                        <TextField fx:id="randomness" prefWidth="300.0" text="0.1">
+                           <HBox.margin>
+                              <Insets left="55.0" top="20.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="40.0" prefWidth="650.0">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="20.0" top="10.0" />
+                           </HBox.margin>
+                           <image>
+                              <Image url="file:/../res/JavaFX/discount.png" />
+                           </image>
+                        </ImageView>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Discount Factor">
+                           <HBox.margin>
+                              <Insets left="25.0" top="25.0" />
+                           </HBox.margin>
+                        </Text>
+                        <TextField fx:id="discountFactor" prefWidth="300.0" text="0.7">
+                           <HBox.margin>
+                              <Insets left="40.0" top="20.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="40.0" prefWidth="650.0">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="20.0" top="10.0" />
+                           </HBox.margin>
+                           <image>
+                              <Image url="file:/../res/JavaFX/limited.png" />
+                           </image>
+                        </ImageView>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Move Limit">
+                           <HBox.margin>
+                              <Insets left="25.0" top="25.0" />
+                           </HBox.margin>
+                        </Text>
+                        <TextField fx:id="moveLimit" prefWidth="300.0" text="10000">
+                           <HBox.margin>
+                              <Insets left="65.0" top="20.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="40.0" prefWidth="650.0">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="20.0" top="10.0" />
+                           </HBox.margin>
+                           <image>
+                              <Image url="file:/../res/JavaFX/cycle.png" />
+                           </image>
+                        </ImageView>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Learning Cycles">
+                           <HBox.margin>
+                              <Insets left="25.0" top="25.0" />
+                           </HBox.margin>
+                        </Text>
+                        <TextField fx:id="cycleCount" prefWidth="300.0" text="1000">
+                           <HBox.margin>
+                              <Insets left="40.0" top="20.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <Button fx:id="applyManInput" mnemonicParsing="false" onMouseClicked="#applyVariables" text="Apply">
+         <VBox.margin>
+            <Insets left="285.0" top="10.0" />
+         </VBox.margin>
+      </Button>
+   </children>
+</VBox>
